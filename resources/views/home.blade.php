@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    fum
+@foreach($comic as $comic)
+    <h4>{{$comic->title}}</h4>
+@endforeach
 @endsection
